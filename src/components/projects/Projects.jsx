@@ -143,7 +143,7 @@ const Projects = () => {
                             <p className='text-md font-medium mb-1'>Tools</p>
                             <div className='flex flex-wrap gap-2 mt-2'>
                                 {pro.tools.map((t ,index)=>(
-                                    <span key={index} className='px-2 py-1 bg-primary/10 rounded-2xl text-xs font-medium border border-primary/50 text-white/70 text-center hover:bg-primary transition duration-300 cursor-pointer' >{t}</span>
+                                    <span key={index} className='px-2 py-1 bg-primary/10 rounded-2xl text-xs font-medium border border-primary/50 text-primary text-center hover:bg-primary hover:text-white transition duration-300 cursor-pointer' >{t}</span>
 
                                 ))}
                             
@@ -157,7 +157,7 @@ const Projects = () => {
                             {
                                 pro.links.map((l,index)=> (
                                     l.url &&
-                                    <a href={l.url} target='_blank' key={index} className='px-2 py-1 bg-primary/10 rounded-2xl text-xs font-medium border border-primary/50 text-white/70 text-center hover:bg-primary transition duration-300 cursor-pointer' >{l.name}</a>
+                                    <a href={l.url} target='_blank' key={index} className='px-2 py-1 bg-primary/10 rounded-2xl text-xs font-medium border border-primary/50 text-primary text-center hover:bg-primary hover:text-white transition duration-300 cursor-pointer' >{l.name}</a>
                                     
                                 ))
                             }
