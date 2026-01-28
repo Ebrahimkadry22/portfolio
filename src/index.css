@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme {
+  --color-background: #0B1220;
+  --color-card: rgba(17,25,40,0.75);
+  --color-primary: #0D7FF2;
+  --color-text: #FFFFFF;
+  --color-muted: #94A3B8;
+}
+
+[data-theme="light"] {
+  --color-background: #F8FAFC;
+  --color-card: rgba(255,255,255,0.8);
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+}
+
+.theme-transition {
+    transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.4s ease ;
+}
+body {
+  background:var(--color-background);
+  color:var(--color-text);
+  
+}
+.glass {
+  background:rgba(17,25,40,0.75);
+  backfrop-filter:blur(14px);
+}
+[data-theme='light'] .glass {
+  background:rgba(255,255,255,0.65);
+  backfrop:blur(14px);
+}
